@@ -1,4 +1,4 @@
-from endstone import ColorFormat
+from endstone import ColorFormat,Player,
 from endstone.command import CommandSender,
 from endstone.event import event_handler, PlayerJoinEvent
 from endstone.plugin import Plugin
