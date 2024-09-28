@@ -9,5 +9,5 @@ class MyPlugin(Plugin):
         self.register_events(self) # register the event listener
 
     @event_handler
-    def on_player_join(self, event: PlayerJoinEvent):
-        self.server.broadcast_message(ColorFormat.YELLOW + f"{event.player.name} has joined the server")
+    def on_player_join(self, event: PlayerJoinEvent, player : Player):
+        player.send_message(ColorFormat.YELLOW + f"{event.player.name} has joined the server")
